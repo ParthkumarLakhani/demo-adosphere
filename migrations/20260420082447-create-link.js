@@ -12,9 +12,9 @@ module.exports = {
 
       user_id: {
         type: Sequelize.INTEGER,
-        defaultValue: Sequelize.UUIDV4,
+        allowNull: false,
         references: {
-          model: 'user',
+          model: 'Users',
           key: 'id'
         }
       },
@@ -37,9 +37,7 @@ module.exports = {
       created_at: {
         type: Sequelize.DATE,
         defaultValue: Sequelize.NOW,
-      },
-
-      timestamps: true,
+      }
     });
   },
   async down(queryInterface, Sequelize) {

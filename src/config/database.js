@@ -1,4 +1,4 @@
-const { Sequelize } = require('sequelize');
+const { Sequelize, DataTypes } = require('sequelize');
 require('dotenv').config();
 const userModel = require('../models/user.js')
 const linkModel = require('../models/link.js');
@@ -21,10 +21,10 @@ const sequelize = new Sequelize(
 );
 
 const db = {};
-db.Sequelize = sequelize;
+db.Sequelize = Sequelize;
+db.sequelize = sequelize;
 
-User = userModel(sequelize);
-Link = linkModel(sequelize);
-
+db.User = userModel(sequelize, DataTypes);
+db.Link = linkModel(sequelize, DataTypes);
 
 module.exports = db;

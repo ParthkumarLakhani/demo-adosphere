@@ -1,0 +1,19 @@
+{
+  "en": {
+    "INTERNAL_SERVER_ERROR": "Internal server error",
+    "ALREADY_ADD_EMAIL": "This email is already registered",
+    "SOMETHING_WENT_WRONG": "Something went wrong",
+    "DB_ERROR": "Database error",
+    "SUCCESS": "Success",
+    "LOGIN_SUCCESS": "Login successfully",
+    "ERROR": "Error",
+    "INVALID_REQUEST_HEADERS": "Invalid request headers",
+    "INVALID_REQUEST_DATA": "Invalid request data @Parameter@",
+    "PARAMETERS_REQUIRED": "@Parameter@ is required",
+    "INVALID_TOKEN": "Token is not valid",
+    "TOKEN_MALFORMED": "Token is malformed",
+    "TOKEN_REFRESHED": "Token is refreshed",
+    "TOKEN_EXPIRED": "Token has been expired",
+    "USER_NOT_FOUND": "Given email not registered"
+  }
+}
